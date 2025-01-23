@@ -1,0 +1,389 @@
+/* Reset margins och padding */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Poppins", sans-serif;
+}
+
+/* Style för header section */
+.header, .Agil-header, .sub-header, .T-header {
+   min-height: 100vh;
+   width: 100%;
+   background-position: center;
+   background-size: cover;
+   position: relative;
+}
+
+.header {
+   background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/int.webp);
+}
+
+.Agil-header {
+   height: 50vh;
+   background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/agile-project-management-tools.jpg);
+}
+
+.sub-header, .T-header {
+   height: 50vh;
+   background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/teknik.png);
+}
+
+.T-header {
+   background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/rs-182293-81612216.webp);
+}
+
+header h1, .Agil-header h1, .sub-header h1, .T-header h1 {
+   color: white;
+   font-size: 48px;
+   text-align: center;
+   margin-top: 100px;
+}
+
+/* Navigation style */
+nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px 50px;
+}
+
+nav img {
+   width: 150px;
+}
+
+.nav-links ul {
+   list-style: none;
+}
+
+.nav-links ul li {
+   display: inline-block;
+   padding: 8px 12px;
+   position: relative;
+}
+
+.nav-links ul li a {
+   text-decoration: none;
+   color: white;
+   font-size: 16px;
+}
+
+.nav-links ul li a:hover::after {
+   width: 100%;
+   background: #0307ff;
+}
+
+.nav-links ul li a::after {
+   content: '';
+   display: block;
+   width: 0%;
+   height: 2px;
+   background: #0307ff;
+   transition: width 0.5s;
+}
+
+.nav-links ul li a.active {
+   color: #b90d0d;
+   font-weight: bold;
+}
+
+/* Hamburger Menu - göm på små skärmar */
+@media (max-width: 700px) {
+    .nav-links ul {
+        display: none;
+        background: #0307ff77;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 200px;
+        text-align: left;
+        padding-top: 30px;
+    }
+
+    .nav-links ul li {
+        display: block;
+        margin: 20px 0;
+    }
+
+    .nav-links ul li a {
+        font-size: 18px;
+    }
+
+    /* Visa hamburgarmenyn */
+    .fas.fa-bars,
+    .fas.fa-times {
+        display: block;
+        font-size: 22px;
+        color: white;
+        margin: 10px;
+        cursor: pointer;
+    }
+
+    
+    #menu-close {
+        display: none;
+    }
+}
+
+
+.nav-links.active ul {
+    display: block;
+}
+
+/* Text-box style */
+.text-box {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: white;
+   text-align: center;
+   width: 90%;
+}
+
+.text-box h1 {
+   font-size: 62px;
+}
+
+.text-box p {
+   margin: 10px 0 40px;
+   font-size: 14px;
+}
+
+.hero-btn {
+   display: inline-block;
+   text-decoration: none;
+   color: white;
+   border: 1px solid white;
+   padding: 12px 34px;
+   background: transparent;
+   font-size: 13px;
+   cursor: pointer;
+}
+
+.hero-btn:hover {
+   background: #0307ff;
+   border-color: #0307ff;
+   transition: background 1s;
+}
+
+/* Section style */
+.Startsida, .Teknik, .Agil, .Berners {
+   width: 80%;
+   margin: auto;
+   padding: 50px 0;
+}
+
+.Startsida h1, .Teknik h1,.Agil h1, .Berners h1 {
+   text-align: center;
+   font-size: 36px;
+   margin-bottom: 20px;
+}
+.Teknik h4,.Berners h4,.Agil h4{
+   text-align: center;
+}
+
+.Startsida p, .Teknik p, .Agil p, .Berners p {
+   color: #777;
+   text-align: center;
+   font-size: 14px;
+   line-height: 1.6;
+}
+
+.row {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 5%;
+}
+
+.Startsida-col, .Teknik-col, .Agil-col, .Berners-col {
+   flex-basis: 31%;
+   background: #fff3f3;
+   padding: 20px;
+   border-radius: 10px;
+}
+
+h3 {
+   text-align: center;
+   font-size: 24px;
+   margin-bottom: 10px;
+}
+
+.Startsida-col:hover, .Teknik-col:hover, .Agil-col:hover, .Berners-col:hover {
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer style */
+footer {
+   background: #0307ff;
+   color: white;
+   text-align: center;
+   padding: 20px 0;
+}
+
+footer a {
+   color: white;
+   text-decoration: none;
+}
+
+footer a:hover {
+   color: #f0f0f0;
+}
+
+/* Responsive style */
+@media (max-width: 700px) {
+   .row {
+       flex-direction: column;
+   }
+
+   .text-box h1 {
+       font-size: 24px;
+   }
+}
+
+/* Style för kontaktformulär */
+.contact-form {
+   width: 80%;
+   margin: auto;
+   padding: 50px 0;
+}
+
+.contact-form h2 {
+   text-align: center;
+   font-size: 28px;
+   margin-bottom: 20px;
+}
+
+.contact-form p {
+   text-align: center;
+   font-size: 16px;
+   margin-bottom: 30px;
+}
+
+.contact-form form {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.contact-form label {
+   font-size: 16px;
+   margin-bottom: 10px;
+   width: 100%;
+   max-width: 500px;
+}
+
+.contact-form input,
+.contact-form textarea {
+   width: 100%;
+   max-width: 500px;
+   padding: 10px;
+   margin-bottom: 20px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   font-size: 16px;
+}
+
+.contact-form button {
+   padding: 12px 30px;
+   font-size: 16px;
+   color: white;
+   background-color: #0307ff;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.contact-form button:hover {
+   background-color: #0205cc;
+}
+
+/* Gör formuläret responsivt */
+@media (max-width: 700px) {
+   .contact-form form {
+       width: 100%;
+   }
+
+   .contact-form input,
+   .contact-form textarea {
+       width: 100%;
+   }
+
+   .contact-form button {
+       width: 100%;
+   }
+}
+/*Video style*/
+
+   .Video-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin: auto;
+      padding:20px;
+  }
+  
+  .Video-container iframe {
+      width: 100%;
+      max-width: 800px;
+      height: 450px; 
+      border: none;
+      border-radius: 10px; 
+  }
+  
+  /* För mindre skärmar  */
+  @media (max-width: 700px) {
+      .Video-container iframe {
+          width: 100%;
+          height: auto; 
+      }
+  }
+/*kanpp till nedladdning*/
+.download-btn {
+   display: inline-block;          
+   padding: 12px 30px;            
+   font-size: 16px;                
+   color: white;                  
+   background-color: #0307ff;     
+   border: none;                   
+   border-radius: 5px;            
+   text-decoration: none;         
+   transition: background-color 0.3s; 
+   cursor: pointer;                
+   margin: 20px auto;             
+   max-width: 300px;              
+   width: 100%;                   
+   text-align: center;         
+}
+
+
+.download-btn:hover {
+   background-color: #0205cc;    
+}
+@media (max-width: 700px) {
+   .download-btn {
+       font-size: 14px;
+       padding: 10px 15px;
+   }
+}
+
+img {
+   max-width: 100%;
+   height: auto;
+   display: block; /* För att undvika extra mellanrum under bilder */
+}
+
+
+
+
+
+  
+
+
+
+
+
+
+

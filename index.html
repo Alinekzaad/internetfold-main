@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Historia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!--Font Awesome ikoner -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="header"> 
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="Website logo"></a>
+            <div class="nav-links" id="nav-links"> 
+                <ul>
+                    <li><a href="index.html" class="active">Startsida</a></li>
+                    <li><a href="Teknik.html">Teknik och utveckling</a></li>
+                    <li><a href="person.html">Tim Berners</a></li>
+                    <li><a href="Agil.html">Agil projektmetodik</a></li>
+                </ul>
+            </div>
+            <!-- Hamburger menu icon (open) -->
+            <i class="fas fa-bars" id="menu-open" onclick="toggleMenu()"></i>
+        </nav>
+    </div>
+
+    <section class="text-box">
+        <h1>Internets historia och utveckling</h1>
+        <p>Utforska hur internet skapades, utvecklades och blev till den revolutionerande teknologi vi använder varje dag.</p>
+        <a href="Teknik.html" class="hero-btn">Utforska mer</a>
+    </section>
+
+    <section class="Startsida">
+        <h1>Kort info om sidorna</h1>
+        <div class="row">
+            <div class="Startsida-col">
+                <h3>Teknik och utveckling</h3>
+                <p>Utforska de tekniska framsteg som har format internet genom åren, inklusive utvecklingen av nätverksprotokoll, webbläsare och serverteknologi.</p>
+            </div>
+            <div class="Startsida-col">
+                <h3>Tim Berners</h3>
+                <p>Tim Berners-Lee, skaparen av World Wide Web, revolutionerade hur vi delar och får tillgång till information online.</p>
+            </div>
+            <div class="Startsida-col">
+                <h3>Agil projektstyrningsmetod</h3>
+                <p>Den agila projektstyrningsmetoden fokuserar på flexibilitet och snabb respons på förändringar, vilket är avgörande i dagens snabbt föränderliga digitala landskap.</p>
+            </div>
+        </div>
+    </section>
+    <br>
+
+    <footer>
+        <nav class="footercontent">
+            <ul>
+                <li><a href="index.html" class="active">Startsida</a></li> 
+                <li><a href="Teknik.html">Teknik och utveckling</a></li>
+                <li><a href="person.html">Tim Berners</a></li>  
+                <li><a href="Agil.html">Agil projektmetodik</a></li>  
+            </ul>
+        </nav>
+        <a href="#top">Tillbaka till toppen</a> 
+    </footer>
+
+    <!-- JavaScript för hamburgar menu-->
+    <script>
+        function toggleMenu() {
+            var navLinks = document.getElementById("nav-links");
+            var menuOpenIcon = document.getElementById("menu-open");
+            var menuCloseIcon = document.getElementById("menu-close");
+
+            navLinks.classList.toggle("active");
+
+            // Växla mellan att visa "menu-open" och "menu-close"
+            if (navLinks.classList.contains("active")) {
+                menuOpenIcon.style.display = "none";  
+                menuCloseIcon.style.display = "block";  
+            } else {
+                menuOpenIcon.style.display = "block";  
+                menuCloseIcon.style.display = "none";  
+            }
+        }
+    </script>
+</body>
+</html>
+
+

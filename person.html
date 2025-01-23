@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Historia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <section class="T-header"> 
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="Website logo"></a>
+            <div class="nav-links" id="nav-links"> 
+                <ul>
+                    <li><a href="index.html">Startsida</a></li>
+                    <li><a href="Teknik.html">Teknik och utveckling</a></li>
+                    <li><a href="person.html" class="active">Tim Berners</a></li>
+                    <li><a href="Agil.html">Agil projektmetodik</a></li>
+                </ul>
+            </div>
+            <!-- Hamburger menu icon (open) -->
+            <i class="fas fa-bars" id="menu-open" onclick="toggleMenu()"></i>
+        </nav>
+        <h1>Tim Berners-Lee</h1>
+    </section>
+
+    <section class="Berners">
+        <div class="row">
+            <div class="Berners-col">
+                <h1>Vem är Tim Berners?</h1>
+                <p>Tim Berners-Lee, som var en brittisk datavetare, arbetade på CERN (European Organization for Nuclear Research) 1989. 
+                Då var internet redan igång, men det fanns inga system på plats för att göra det enkelt för forskare och organisationer att samarbeta och dela med sig av bud som de om bud.
+                Tim Berners-Lees bästa uppfinning inom teknik var World Wide Web. Hans skapande av den första webbläsaren 1990 och den första webbsidan på CERN:s datorer var revolutionerande.
+                Webben var ett sätt för användare att vara sammankopplade genom hyperlänkar som mycket enkelt kunde låta dem hitta olika sidor från en till en annan.
+                </p>
+                <br>
+                <p>Berners har även skapat dem grundläggande teknologierna för webben som i dagsläget fortfarande används och dessa är HTML,HTTP, och URL.
+                Ett system för adressering och identifiering av resurser på webben. Tack vare utvecklingen av HTML, HTTP och URL lade Berners-Lee grunden för internet. 
+                Tack vare dessa instrument kunde varje enskild person dela och ta emot information från vilken plats som helst i världen, oavsett vilken dator eller vilket nätverk de använde.
+                </p>
+                <br>
+                <h4>Analys</h4>
+                <p>Utan tvekan kan vi betrakta Berners vision om webben som den primära faktorn som ledde till dess framgång på global nivå. 
+                Tack vare att tekniken inte var skyddad av licenser och patent hade utvecklare över hela världen möjlighet att förändra och skapa på webben. Vi konfronteras för närvarande med nya problem, 
+                som de som inkräktar på vår integritet eller översköljer oss med enorm information, men Tim Berners-Lees första idé om en fri och allmänt tillgänglig webb är fortfarande viktigare än någonsin tidigare.
+                </p>
+                <br>
+                <h4>Referenser</h4>
+                    <li><a href="https://www.w3.org/People/Berners-Lee/" target="_blank">www.w3.org</a></li>
+            </div>
+            <div class="Berners-col">
+                <img src="images/tim_berners_lee.png" alt="Tim Berners-Lee">
+            </div>
+        </div>
+    </section>
+    <br>
+
+    <footer>
+        <nav class="footercontent">
+            <ul>
+                <li><a href="index.html">Startsida</a></li> 
+                <li><a href="Teknik.html">Teknik och utveckling</a></li>
+                <li><a href="person.html" class="active">Tim Berners</a></li>  
+                <li><a href="Agil.html">Agil projektmetodik</a></li>  
+            </ul>
+        </nav>
+        <a href="#top">Tillbaka till toppen</a>
+    </footer>
+
+    <!-- JavaScript för hamburger menu -->
+    <script>
+        function toggleMenu() {
+            var navLinks = document.getElementById("nav-links");
+            var menuOpenIcon = document.getElementById("menu-open");
+            var menuCloseIcon = document.getElementById("menu-close");
+
+            navLinks.classList.toggle("active");
+
+            // Toggle between showing "menu-open" and "menu-close"
+            if (navLinks.classList.contains("active")) {
+                menuOpenIcon.style.display = "none";  // Hide open menu icon
+                menuCloseIcon.style.display = "block";  // Show close menu icon
+            } else {
+                menuOpenIcon.style.display = "block";  // Show open menu icon
+                menuCloseIcon.style.display = "none";  // Hide close menu icon
+            }
+        }
+    </script>
+</body>
+</html>
+

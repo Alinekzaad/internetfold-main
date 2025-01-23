@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Historia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <section class="Agil-header"> 
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="Website logo"></a>
+            <div class="nav-links" id="nav-links"> 
+                <ul>
+                    <li><a href="index.html">Startsida</a></li>
+                    <li><a href="Teknik.html">Teknik och utveckling</a></li>
+                    <li><a href="person.html">Tim Berners</a></li>
+                    <li><a href="Agil.html" class="active">Agil projektmetodik</a></li>
+                </ul>
+            </div>
+            <!-- Hamburger menu icon (open) -->
+            <i class="fas fa-bars" id="menu-open" onclick="toggleMenu()"></i>
+            </nav>
+        <h1>Agil Projektmetodik</h1>
+    </section>
+
+    <section class="Agil">
+        <div class="row">
+            <div class="Agil-col">
+                <h1>Agil Projektmetodik</h1>
+                <p>Sedan början av 2000-talet har agila metoder blivit en standardmetod för projektledning i många teknikorganisationer. De flesta mjukvaruteam arbetar idag med någon form av bärbar lösning, och en del är integrerade på flera arbetsplatser. Ordet i sig har blivit väldigt populärt – chefer runt om i världen pratar om behovet av "hastighet".
+                 Men vad innebär det att använda en agil projektledningsstrategi i ditt företag? Genom att dela upp arbetet i mindre delar kan agila team använda feedback från intressenter, omvärdera arbetet och tillämpa en iterativ metod för varje del av processen. En av de vanligaste agila metoderna är att dela in uppgifter i korta utvecklingsfaser som kallas sprints.
+                 På så sätt kan teamet snabbt planera och följa upp dagligen och se över arbetet med chefer och intressenter.
+                 Efter granskningen kan projektgruppen och intressenterna antingen fortsätta på nuvarande väg eller snabbt ändra planerna i framtiden. Jämfört med traditionella projektledningsstrategier prioriterar agila metoder snabbhet, flexibilitet, samarbete och intressenters behov.</p>
+                    <br>
+                    <p>Scrum är en struktur designad för team som bygger och utvecklas snabbt, och deras processer främjar samarbete för att lösa komplexa problem. 
+                    Även om du inte är medlem i det teamet kan du fortfarande dra nytta av Scrum.</p>
+                    <br>
+                    <h4>Analys</h4>
+                    <p>Agile metoder påskyndar teamets anpassning till förändring och driftsoptimering.
+                     Jag skulle hävda att agila metoder är de viktigaste möjliggörarna för en kultur som är öppet kommunikativ och samarbetsvillig där teknik råder, 
+                    därför är det den viktigaste faktorn för framgångsrik verksamhet i teknikdriven miljö. Införandet av agila principer i framtiden kommer att ha en betydande inverkan på projektledning, 
+                    särskilt med tanke på de snabba förändringar som kommer med digital teknik och affärsstrategier.
+                    </p>
+                     <h4>Referenser</h4>
+                     <ul>
+                     <li><a href="https://www.atlassian.com/agile" target="_blank">www.atlassian.com</a></li>
+                     <li><a href="https://www.scrum.org/learning-series/what-is-scrum/" target="_blank">www.scrum.org</a></li>
+                     <li><a href="https://experience.dropbox.com/sv-se/resources/agile-methodology" target="_blank">experience.dropbox.com</a></li>
+                     </ul>
+                     <p>Nedan så finner du en kort video om vad SCRUM är och hur det fungerar.</p>
+                     <p>▼ </p>
+            </div>
+            <div class="Berners-col">
+                <img src="images/agil-sprint.webp" alt="Agil projektmetodik illustration">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="Video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/iJ_sl6J8PRg" style="border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+    </section>
+
+    <!-- Formuläret börjar här -->
+    <section class="contact-form">
+        <h2>Frågor om Agil Metodik?</h2>
+        <p>Fyll i formuläret nedan med dina frågor eller erfarenheter av agil projektmetodik:</p>
+        <form action="submit.php" method="post">
+            <label for="name">Namn:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">E-post:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Dela dina erfarenheter eller frågor:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">Skicka</button>
+        </form>
+    </section>
+    <!-- Formuläret slutar här -->
+
+    <br>
+
+    <footer>
+        <nav class="footercontent">
+            <ul>
+                <li><a href="index.html">Startsida</a></li>
+                <li><a href="Teknik.html">Teknik och utveckling</a></li>
+                <li><a href="person.html">Tim Berners</a></li>  
+                <li><a href="Agil.html" class="active">Agil projektmetodik</a></li>
+            </ul>
+        </nav>
+        <a href="#top">Tillbaka till toppen</a>
+    </footer>
+
+    <!-- JavaScript för hamburgar menu-->
+    <script>
+        function toggleMenu() {
+            var navLinks = document.getElementById("nav-links");
+            var menuOpenIcon = document.getElementById("menu-open");
+            var menuCloseIcon = document.getElementById("menu-close");
+
+            navLinks.classList.toggle("active");
+
+            // Växla mellan att visa "menu-open" och "menu-close"
+            if (navLinks.classList.contains("active")) {
+                menuOpenIcon.style.display = "none";  // Göm öppna menyn
+                menuCloseIcon.style.display = "block";  // Visa stäng-menyn
+            } else {
+                menuOpenIcon.style.display = "block";  // Visa öppna menyn
+                menuCloseIcon.style.display = "none";  // Göm stäng-menyn
+            }
+        }
+    </script>
+</body>
+</html>
+

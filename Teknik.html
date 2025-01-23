@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Historia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header"> 
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="Website logo"></a>
+            <div class="nav-links" id="nav-links"> 
+                <ul>
+                    <li><a href="index.html">Startsida</a></li>
+                    <li><a href="Teknik.html" class="active">Teknik och utveckling</a></li>
+                    <li><a href="person.html">Tim Berners</a></li>
+                    <li><a href="Agil.html">Agil projektmetodik</a></li>
+                </ul>
+            </div>
+            <!-- Hamburger menu icon (open) -->
+            <i class="fas fa-bars" id="menu-open" onclick="toggleMenu()"></i>
+            </nav>
+        <h1>Teknik och utveckling</h1>
+    </section>
+
+    <section class="Teknik">
+        <div class="row">
+            <div class="Teknik-col">
+                <h1>Internets tekniska utveckling</h1>
+                <p>Ursprunget till Internet är känt som ARPANET.Det första meddelandet skickades
+                den 29 oktober 1969 mellan två datorer på ARPANET,detta var då föregångaren till
+                dagens så kallde internet. Nu när datorer börjar prata med varandra har de första
+                 fröna till internet såtts. </p>
+                 <br>
+                 <h4>Vad är Arpanet?</h4>
+                 <p>Arpanet (Advanced Research Projects Agency Network) är ett nätverk som är
+                 föregångare till dagens moderna Internet. Historian om Arpanet startar på den 
+                amerikanska försvarsmyndigheten APRA där idén kom till och Internet först formuleras 1963.
+                 Det utvecklades under större delen av 1960 talet. </p>
+                 <br>
+                 <h4>TCP/IP</h4>
+                 <p>Den 5 maj 1974 introducerades TCP/IP, två protokoll som introducerade en ny teknik för att skicka information mellan datorer i olika nätverk.
+                 Bakom utvecklingen av TCP/IP stod amerikanerna Vint Cerf och Robert Kahn, som arbetade tillsammans på ARPANET (det första nätverket känt som Internet).
+                 TCP- och IP-protokoll möjliggör snabb överföring av informationspaket mellan anslutna datorer och nätverk.
+                 Allt i detta system bygger på att nätverken inte kontrollerar informationen som skickas, vilket är mycket viktigt för internets framgång. Det är samma sak som posten, de bryr sig inte om vad eller hur du skickar det, så länge paketet kommer.
+                 Det är inte allt: paketen separeras och skickas i sektioner och sätts ihop efter att de har anlänt till destinationen från olika rutter.</p>
+                 <br>
+                 <h4>Analys</h4>
+                 <p>Utan utvecklingen av Arpanet och dess system så kan jag med stark åsikt säga att Internet inte hade sett ut så som den gör idag.
+                Själva innovationen lade grunden till den globala digitala infrastrukturen och som nu äger allt från sociala medier till molntjänster.
+                I och med allt detta så är det intressant att tänka på att det var en militär forskning som skapade allt detta i grund och botten som nu är en av de viktigaste delarna i våra liv.
+                 </p>
+                 <br>
+                    <h4>Referenser</h4>
+                        <li><a href="https://internetmuseum.se/tidslinjen/arpanet/" target="_blank">internetmuseum.se</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=1UStbvRnwmQ&t=445s" target="_blank">www.youtube.com</a></li>
+                <p>Nedan finner du en nedladdningsbar PDF fil om tidslinjen</p>
+                <p>▼ </p>
+                
+            </div>
+            <div class="Teknik-col">
+                <img src="images/monitor-1307227_1280.webp" alt="Teknologisk utveckling av Internet">
+            </div>
+        </div>
+    </section>
+    <br>
+        <a href="downloads/Tidslinje%20Internets%20Historia.pdf" class="download-btn" download="Tidslinje Internets Historia.pdf">Ladda ner Tidslinje om Internets Historia</a>
+    </div>
+
+    <footer>
+        <nav class="footercontent">
+            <ul>
+                <li><a href="index.html">Startsida</a></li> 
+                <li><a href="Teknik.html" class="active">Teknik och utveckling</a></li>
+                <li><a href="person.html">Tim Berners</a></li>  
+                <li><a href="Agil.html">Agil projektmetodik</a></li>  
+            </ul>
+        </nav>
+        <a href="#top">Tillbaka till toppen</a> 
+    </footer>
+
+    <!-- JavaScript för hamburger menu -->
+    <script>
+        function toggleMenu() {
+            var navLinks = document.getElementById("nav-links");
+            var menuOpenIcon = document.getElementById("menu-open");
+            var menuCloseIcon = document.getElementById("menu-close");
+
+            navLinks.classList.toggle("active");
+
+            // Toggle between showing "menu-open" and "menu-close"
+            if (navLinks.classList.contains("active")) {
+                menuOpenIcon.style.display = "none";  // Hide open menu icon
+                menuCloseIcon.style.display = "block";  // Show close menu icon
+            } else {
+                menuOpenIcon.style.display = "block";  // Show open menu icon
+                menuCloseIcon.style.display = "none";  // Hide close menu icon
+            }
+        }
+    </script>
+</body>
+</html>
+
