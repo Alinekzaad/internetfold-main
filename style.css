@@ -16,7 +16,7 @@
 }
 
 .header {
-   background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/int.webp);
+   background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/int.jpg);
 }
 
 .Agil-header {
@@ -30,7 +30,7 @@
 }
 
 .T-header {
-   background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/rs-182293-81612216.webp);
+   background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/rs-182293-81612216.jpg);
 }
 
 header h1, .Agil-header h1, .sub-header h1, .T-header h1 {
