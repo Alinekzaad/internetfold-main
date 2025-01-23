@@ -16,12 +16,12 @@
 }
 
 .header {
-   background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/int.jpg);
+   background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/int.png);
 }
 
 .Agil-header {
    height: 50vh;
-   background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/agile-project-management-tools.jpg);
+   background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/agil-sprint.png);
 }
 
 .sub-header, .T-header {
@@ -30,7 +30,7 @@
 }
 
 .T-header {
-   background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/rs-182293-81612216.jpg);
+   background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/rs-182293-81612216.png);
 }
 
 header h1, .Agil-header h1, .sub-header h1, .T-header h1 {
