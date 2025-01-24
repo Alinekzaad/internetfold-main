@@ -16,21 +16,21 @@
 }
 
 .header {
-   background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/int.png);
+   background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/int.jpg);
 }
 
 .Agil-header {
    height: 50vh;
-   background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/technology-6701504_1280.png);
+   background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/technology-6701504_1280.jpg);
 }
 
 .sub-header, .T-header {
    height: 50vh;
-   background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/teknik.png);
+   background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/teknik.jpg);
 }
 
 .T-header {
-   background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/rs-182293-81612216.png);
+   background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/rs-182293-81612216.jpg);
 }
 
 header h1, .Agil-header h1, .sub-header h1, .T-header h1 {
@@ -381,6 +381,12 @@ img {
    height: auto;
    display: block;
 }
+
+/*Logo*/
+#website-logo {
+   background-color: transparent;
+}
+
 
 
 
