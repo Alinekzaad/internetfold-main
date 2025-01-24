@@ -126,6 +126,13 @@ nav img {
     }
 }
 
+@media (min-width: 701px) {
+   #menu-open {
+       display: none; 
+   }
+}
+
+
 
 .nav-links.active ul {
     display: block;
