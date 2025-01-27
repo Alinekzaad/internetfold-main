@@ -204,8 +204,15 @@ nav img {
    margin-top: 5%;
 }
 
-.Startsida-col, .Teknik-col, .Agil-col, .Berners-col {
+.Startsida-col {
    flex-basis: 31%;
+   background: #fff3f3;
+   padding: 20px;
+   border-radius: 10px;
+}
+
+.Teknik-col, .Agil-col, .Berners-col {
+   flex-basis: 45%;
    background: #fff3f3;
    padding: 20px;
    border-radius: 10px;
